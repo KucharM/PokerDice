@@ -1,0 +1,9 @@
+#mainWindow {
+    -fx-background-color: #0b8939;
+}
+#dice3View {
+    -fx-fill: #2a4e7c;
+}
+.button {
+    -fx-fill: green;
+}
