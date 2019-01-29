@@ -2,13 +2,15 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.GameWindowController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="760.0" stylesheets="@../css/GameWindow.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.GameWindowController">
    <children>
       <Button fx:id="rollDiceButton" layoutX="96.0" layoutY="272.0" mnemonicParsing="false" onAction="#rollDice" prefHeight="50.0" prefWidth="101.0" text="Roll Dice" />
-      <VBox alignment="CENTER" layoutX="46.0" layoutY="71.0" prefHeight="100.0" prefWidth="50.0">
+      <VBox alignment="CENTER" layoutX="39.0" layoutY="172.0" prefHeight="100.0" prefWidth="50.0">
          <children>
             <Label fx:id="score1" prefHeight="20.0" prefWidth="50.0" />
             <Label fx:id="score2" prefHeight="20.0" prefWidth="50.0" />
@@ -19,7 +21,7 @@
       </VBox>
       <Label layoutX="57.0" layoutY="41.0" text="USER:" />
       <Label layoutX="509.0" layoutY="41.0" text="CPU:" />
-      <VBox alignment="CENTER" layoutX="496.0" layoutY="71.0" prefHeight="100.0" prefWidth="50.0">
+      <VBox alignment="CENTER" layoutX="509.0" layoutY="178.0" prefHeight="100.0" prefWidth="50.0">
          <children>
             <Label fx:id="cpuScore1" prefHeight="20.0" prefWidth="50.0" />
             <Label fx:id="cpuScore2" prefHeight="20.0" prefWidth="50.0" />
@@ -28,6 +30,32 @@
             <Label fx:id="cpuScore5" prefHeight="20.0" prefWidth="50.0" />
          </children>
       </VBox>
-      <Label fx:id="messageLabel" layoutX="306.0" layoutY="272.0" prefHeight="50.0" prefWidth="116.0" />
+      <HBox layoutX="411.0" layoutY="71.0" prefHeight="50.0" prefWidth="300.0" spacing="5.0">
+         <children>
+            <ImageView fx:id="cpuDice1img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cpuDice2img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cpuDice3img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cpuDice4img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="cpuDice5img" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <HBox layoutX="39.0" layoutY="84.0" prefHeight="50.0" prefWidth="279.0" spacing="5.0">
+         <children>
+            <ImageView fx:id="userDice1img" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#selectDice1" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="userDice2img" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#selectDice2" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="userDice3img" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#selectDice3" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="userDice4img" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#selectDice4" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="userDice5img" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#selectDice5" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+      <VBox fx:id="usersSelectedDices" layoutX="72.0" layoutY="353.0" prefHeight="200.0" prefWidth="40.0">
+         <children>
+            <ImageView fx:id="selectedDice1" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#removeDice1" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="selectedDice2" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#removeDice2" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="selectedDice3" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="50.0" onMouseClicked="#removeDice3" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="selectedDice4" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="90.0" onMouseClicked="#removeDice4" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="selectedDice5" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="130.0" onMouseClicked="#removeDice5" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </VBox>
    </children>
 </Pane>

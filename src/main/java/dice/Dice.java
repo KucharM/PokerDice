@@ -11,19 +11,20 @@ public class Dice {
     public Dice() {
         Random random = new Random();
         this.diceValue = random.nextInt(6) + 1;
-        //this.diceImage = new MapOfDiceImage().getImage(diceValue);
+        this.diceImage = new MapOfDiceImage().getMapOfDiceImage().get(this.diceValue);
     }
 
+    //GETTERS
     public int getDiceValue() {
-        return diceValue;
+        return this.diceValue;
     }
 
     public Image getDiceImage() {
-        return diceImage;
+        return this.diceImage;
     }
 
-    @Override
+    //to String method
     public String toString() {
-        return "number " + diceValue;
+        return "number " + this.diceValue;
     }
 }

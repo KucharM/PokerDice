@@ -12,12 +12,12 @@ public class MapOfDiceImage {
         this.mapOfDiceImage = createMapOfDiceImage();
     }
 
-    public Image getImage(Integer key){
-        return mapOfDiceImage.get(key);
+    public Map<Integer, Image> getMapOfDiceImage() {
+        return this.mapOfDiceImage;
     }
 
     private Map<Integer, Image> createMapOfDiceImage () {
-        HashMap<Integer, Image> map = new HashMap<>();
+        Map<Integer, Image> map = new HashMap<>();
 
         map.put(1, new Image("/dices-img/Alea_1.png"));
         map.put(2, new Image("/dices-img/Alea_2.png"));

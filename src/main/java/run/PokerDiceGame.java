@@ -1,23 +1,25 @@
 package run;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import utils.FxmlUtil;
 
 public class PokerDiceGame extends Application {
+    private static final String MAIN_WINDOW_FXML = "/fxml/MainWindow.fxml";
+
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader fxmlLoader = new FXMLLoader(this.getClass().getResource("/fxml/MainWindow.fxml"));
-        BorderPane borderPane = fxmlLoader.load();
+        Pane borderPane = FxmlUtil.loadWindow(MAIN_WINDOW_FXML);
 
         Scene scene = new Scene(borderPane);
         primaryStage.setTitle("Poker Dice");
+        primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.show();
     }

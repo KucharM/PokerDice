@@ -1,0 +1,4 @@
+.ImageView:selected {
+    -fx-border-color: red;
+
+}
