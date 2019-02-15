@@ -9,15 +9,15 @@ public class ListOfDice {
     private List<Dice> diceList;
 
     public ListOfDice() {
-        this.diceList = createDiceList();
+        this.diceList = createDiceList(5);
     }
 
     //method creates list of five dices with different values
-    private List<Dice> createDiceList() {
+    public List<Dice> createDiceList(int x) {
         List<Dice> list = new ArrayList<>();
 
-        for (int i = 0; i < 5; i++)
-            list.add(0, new Dice());
+        for (int i = 0; i < x; i++)
+            list.add(new Dice());
 
         return list;
     }
@@ -27,11 +27,13 @@ public class ListOfDice {
         return diceList;
     }
 
-    public void addDiceToList(int index, Dice dice) {
-        diceList.add(index, dice);
+    public void setDice(int index, Dice dice) {
+        Dice dice1 = diceList.get(index);
+        dice1 = dice;
     }
-    public void setDiceList(ListOfDice listOfDice) {
-        this.diceList = listOfDice.getDiceList();
+
+    public void setDiceList(List<Dice> diceList) {
+        this.diceList = diceList;
     }
 
     public Dice getDice(int index) {

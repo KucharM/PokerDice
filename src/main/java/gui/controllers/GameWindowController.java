@@ -1,5 +1,6 @@
 package gui.controllers;
 
+import dice.Dice;
 import dice.GameLogic;
 import dice.ListOfDice;
 import javafx.fxml.FXML;
@@ -11,185 +12,176 @@ import javafx.scene.layout.VBox;
 import java.util.ArrayList;
 import java.util.List;
 
-
 public class GameWindowController {
+    static int nrOfRounds = 3;
+    private int nrUserDiceToRoll = 5, nrCpuDiceToRoll = 5;
+    private int chosenDiceIndex = 0;
+    private GameLogic game = new GameLogic();
+
     @FXML
-    private VBox usersSelectedDices;
+    private Label labelInfo;
     @FXML
-    private Label messageLabel;
+    private VBox usersSelectedDices, cpuSelectedDice;
     @FXML
     private Button rollDiceButton;
     @FXML
-    private Label cpuScore1, cpuScore2, cpuScore3, cpuScore4, cpuScore5, score1, score2, score3, score4, score5, result;
+    private ImageView drawnUserDice1, drawnUserDice2, drawnUserDice3, drawnUserDice4, drawnUserDice5;
+    private ImageView[] drawnUserDice = {drawnUserDice1, drawnUserDice2, drawnUserDice3, drawnUserDice4, drawnUserDice5};
     @FXML
-    private ImageView cpuDice1img, cpuDice2img, cpuDice3img, cpuDice4img, cpuDice5img;
+    private ImageView drawnCpuDice1, drawnCpuDice2, drawnCpuDice3, drawnCpuDice4, drawnCpuDice5;
+    private ImageView[] drawnCpuDice = {drawnCpuDice1, drawnCpuDice2, drawnCpuDice3, drawnCpuDice4, drawnCpuDice5};
     @FXML
-    private ImageView userDice1img, userDice2img, userDice3img, userDice4img, userDice5img;
+    private ImageView chosenUserDice1, chosenUserDice2, chosenUserDice3, chosenUserDice4, chosenUserDice5;
+    private ImageView[] chosenUserDice = {chosenUserDice1, chosenUserDice2, chosenUserDice3, chosenUserDice4, chosenUserDice5};
     @FXML
-    private ImageView selectedDice1, selectedDice2, selectedDice3, selectedDice4, selectedDice5;
+    private ImageView chosenCpuDice1, chosenCpuDice2, chosenCpuDice3, chosenCpuDice4, chosenCpuDice5;
+    private ImageView[] chosenCpuDice = {chosenCpuDice1, chosenCpuDice2, chosenCpuDice3, chosenCpuDice4, chosenCpuDice5};
 
-    private List<ImageView> drawnDiceImageView = new ArrayList<>();
-    private List<ImageView> chosenDiceImageView = new ArrayList<>();
+    private List<ImageView> drawnUserDiceImgView = new ArrayList<>();
+    private List<ImageView> chosenUserDiceImgView = new ArrayList<>();
+    private List<ImageView> drawnCpuDiceImgView = new ArrayList<>();
+    private List<ImageView> chosenCpuDiceImgView = new ArrayList<>();
 
-    private ListOfDice chosenDiceList;
-    private ListOfDice drawnDiceList;
-
-    private void setChosenDicesListImageView() {
-        chosenDiceImageView.add(0, selectedDice1);
-        chosenDiceImageView.add(1, selectedDice2);
-        chosenDiceImageView.add(2, selectedDice3);
-        chosenDiceImageView.add(3, selectedDice4);
-        chosenDiceImageView.add(4, selectedDice5);
-    }
-
-    private void setDrawnDiceListImageView() {
-        drawnDiceImageView.add(0, userDice1img);
-        drawnDiceImageView.add(1, userDice2img);
-        drawnDiceImageView.add(2, userDice3img);
-        drawnDiceImageView.add(3, userDice4img);
-        drawnDiceImageView.add(4, userDice5img);
-    }
-
-    private GameLogic game = new GameLogic();
+    private ListOfDice drawnUserDiceList = game.getUser().getUserDiceList();
+    private ListOfDice drawnCpuDiceList = game.getCpuUser().getUserDiceList();
+    private List<Dice> chosenUserDiceList = new ArrayList<>();
+    private List<Dice> chosenCpuDiceList = new ArrayList<>();
 
     public void initialize() {
-        setChosenDicesListImageView();
-        setDrawnDiceListImageView();
-        //playerDice = new ListOfDice();
+        setDrawnCpuDiceImgView();
+        setDrawnUserDiceImgView();
+        setChosenUserDiceImgView();
+        setChosenCpuDiceImgView();
     }
 
     @FXML
     public void rollDice() {
+        nrOfRounds--;
 
-        ListOfDice listOfDice = new ListOfDice();
-        drawnDiceList = listOfDice;
-        //ListOfDice l1 = new ListOfDice();
-        //playerDice = game.getPlayerUserDicesList();
+        drawnUserDiceList.setDiceList(drawnUserDiceList.createDiceList(nrUserDiceToRoll));
+        drawnCpuDiceList.setDiceList(drawnCpuDiceList.createDiceList(nrCpuDiceToRoll));
 
-        //showUserScoreInLabel(playerUserDices);
-        //showCpuScoreInLabel(computerUserDices);
+        showDrawnDice(drawnUserDiceImgView, drawnUserDiceList, nrUserDiceToRoll);
+        showDrawnDice(drawnCpuDiceImgView, drawnCpuDiceList, nrCpuDiceToRoll);
 
-        //messageLabel.setText("Select numbers to roll again");
-
-        showCpuDiceImages(game);
-        showUserDiceImages(game);
-
-        //game.getPlayerUserDicesList().setDiceList(new ListOfDice());
-        //showUserDiceImages(game.getPlayerUserDicesList());
-        //showUserDiceImages(game.setUserDices());
+        switch (nrOfRounds) {
+            case 3:
+                labelInfo.setText("Roll dice");
+                break;
+            case 2:
+                labelInfo.setText("select dice to re roll");
+                break;
+            case 1:
+                labelInfo.setText("you have one roll");
+                break;
+            case 0:
+                labelInfo.setText("No more moves, complete your hand");
+                rollDiceButton.disableProperty().set(true);
+                break;
+        }
     }
 
-//    private void showUserScoreInLabel(ListOfDice userlList) {
-//        score1.setText(userlList.getDiceListValueAsString(0));
-//        score2.setText(userlList.getDiceListValueAsString(1));
-//        score3.setText(userlList.getDiceListValueAsString(2));
-//        score4.setText(userlList.getDiceListValueAsString(3));
-//        score5.setText(userlList.getDiceListValueAsString(4));
-//    }
-//
-//    private void showCpuScoreInLabel(ListOfDice compList) {
-//        cpuScore1.setText(compList.getDiceListValueAsString(0));
-//        cpuScore2.setText(compList.getDiceListValueAsString(1));
-//        cpuScore3.setText(compList.getDiceListValueAsString(2));
-//        cpuScore4.setText(compList.getDiceListValueAsString(3));
-//        cpuScore5.setText(compList.getDiceListValueAsString(4));
-//    }
+    private void showDrawnDice(List<ImageView> imageViews, ListOfDice listOfDice, int diceToRoll) {
+        switch (diceToRoll) {
+            case 4:
+                imageViews.get(4).imageProperty().set(null);
+                break;
+            case 3:
+                imageViews.get(4).imageProperty().set(null);
+                imageViews.get(3).imageProperty().set(null);
+                break;
+            case 2:
+                imageViews.get(4).imageProperty().set(null);
+                imageViews.get(3).imageProperty().set(null);
+                imageViews.get(2).imageProperty().set(null);
+                break;
+            case 1:
+                imageViews.get(4).imageProperty().set(null);
+                imageViews.get(3).imageProperty().set(null);
+                imageViews.get(2).imageProperty().set(null);
+                imageViews.get(1).imageProperty().set(null);
+                break;
+        }
 
-    private void showCpuDiceImages(GameLogic game) {
-        cpuDice1img.setImage(game.getCpuUserDicesList().getDiceImage(0));
-        cpuDice2img.setImage(game.getCpuUserDicesList().getDiceImage(1));
-        cpuDice3img.setImage(game.getCpuUserDicesList().getDiceImage(2));
-        cpuDice4img.setImage(game.getCpuUserDicesList().getDiceImage(3));
-        cpuDice5img.setImage(game.getCpuUserDicesList().getDiceImage(4));
-    }
-
-    private void showUserDiceImages(GameLogic game) {
-        userDice1img.setImage(game.getPlayerUserDicesList().getDiceImage(0));
-        userDice2img.setImage(game.getPlayerUserDicesList().getDiceImage(1));
-        userDice3img.setImage(game.getPlayerUserDicesList().getDiceImage(2));
-        userDice4img.setImage(game.getPlayerUserDicesList().getDiceImage(3));
-        userDice5img.setImage(game.getPlayerUserDicesList().getDiceImage(4));
+        for (int i = 0; i < diceToRoll; i++) {
+            imageViews.get(i).setImage(listOfDice.getDiceImage(i));
+        }
     }
 
     @FXML
     private void selectDice1() {
-        game.getSelectedDices().add(0, game.getPlayerUserDicesList().getDice(0));
-        userDice1img.imageProperty().set(null);
-        chosenDiceImageView.get(0).setImage(game.getSelectedDices().get(0).getDiceImage());
-        chosenDiceImageView.remove(0);
+        chosenUserDiceList.add(drawnUserDiceList.getDice(0));
+        drawnUserDice1.imageProperty().set(null);
+        chosenUserDiceImgView.get(chosenDiceIndex).setImage(chosenUserDiceList.get(chosenDiceIndex).getDiceImage());
+        chosenDiceIndex++;
+        nrCpuDiceToRoll--;
     }
 
     @FXML
     private void selectDice2() {
-        game.getSelectedDices().add(0, game.getPlayerUserDicesList().getDice(1));
-        userDice2img.imageProperty().set(null);
-        chosenDiceImageView.get(0).setImage(game.getSelectedDices().get(0).getDiceImage());
-        chosenDiceImageView.remove(0);
+        chosenUserDiceList.add(drawnUserDiceList.getDice(1));
+        drawnUserDice2.imageProperty().set(null);
+        chosenUserDiceImgView.get(chosenDiceIndex).setImage(chosenUserDiceList.get(chosenDiceIndex).getDiceImage());
+        chosenDiceIndex++;
+        nrCpuDiceToRoll--;
     }
 
     @FXML
     private void selectDice3() {
-        game.getSelectedDices().add(0, game.getPlayerUserDicesList().getDice(2));
-        userDice3img.imageProperty().set(null);
-        chosenDiceImageView.get(0).setImage(game.getSelectedDices().get(0).getDiceImage());
-        chosenDiceImageView.remove(0);
+        chosenUserDiceList.add(drawnUserDiceList.getDice(2));
+        drawnUserDice3.imageProperty().set(null);
+        chosenUserDiceImgView.get(chosenDiceIndex).setImage(chosenUserDiceList.get(chosenDiceIndex).getDiceImage());
+        chosenDiceIndex++;
+        nrCpuDiceToRoll--;
     }
 
     @FXML
     private void selectDice4() {
-        game.getSelectedDices().add(0, game.getPlayerUserDicesList().getDice(3));
-        userDice4img.imageProperty().set(null);
-
-        chosenDiceImageView.get(0).setImage(game.getSelectedDices().get(0).getDiceImage());
-        chosenDiceImageView.remove(0);
+        chosenUserDiceList.add(drawnUserDiceList.getDice(3));
+        drawnUserDice4.imageProperty().set(null);
+        chosenUserDiceImgView.get(chosenDiceIndex).setImage(chosenUserDiceList.get(chosenDiceIndex).getDiceImage());
+        chosenDiceIndex++;
+        nrCpuDiceToRoll--;
     }
 
     @FXML
     private void selectDice5() {
-        game.getSelectedDices().add(0, game.getPlayerUserDicesList().getDice(4));
-        userDice5img.imageProperty().set(null);
-        chosenDiceImageView.get(0).setImage(game.getSelectedDices().get(0).getDiceImage());
-        chosenDiceImageView.remove(0);
+        chosenUserDiceList.add(drawnUserDiceList.getDice(4));
+        drawnUserDice5.imageProperty().set(null);
+        chosenUserDiceImgView.get(chosenDiceIndex).setImage(chosenUserDiceList.get(chosenDiceIndex).getDiceImage());
+        chosenDiceIndex++;
+        nrCpuDiceToRoll--;
     }
 
-    @FXML
-    private void removeDice1() {
-        game.getRemovedDices().add(0, game.getSelectedDices().get(0));
-        selectedDice1.imageProperty().set(null);
-        chosenDiceImageView.add(selectedDice1);
-        userDice1img.setImage(game.getRemovedDices().get(0).getDiceImage());
+    private void setDrawnUserDiceImgView() {
+        drawnUserDiceImgView.add(drawnUserDice1);
+        drawnUserDiceImgView.add(drawnUserDice2);
+        drawnUserDiceImgView.add(drawnUserDice3);
+        drawnUserDiceImgView.add(drawnUserDice4);
+        drawnUserDiceImgView.add(drawnUserDice5);
     }
 
-    @FXML
-    private void removeDice2() {
-        game.getRemovedDices().add(0, game.getSelectedDices().get(1));
-        selectedDice2.imageProperty().set(null);
-        chosenDiceImageView.add(selectedDice2);
-        userDice2img.setImage(game.getRemovedDices().get(0).getDiceImage());
+    private void setDrawnCpuDiceImgView() {
+        drawnCpuDiceImgView.add(drawnCpuDice1);
+        drawnCpuDiceImgView.add(drawnCpuDice2);
+        drawnCpuDiceImgView.add(drawnCpuDice3);
+        drawnCpuDiceImgView.add(drawnCpuDice4);
+        drawnCpuDiceImgView.add(drawnCpuDice5);
     }
 
-    @FXML
-    private void removeDice3() {
-        game.getRemovedDices().add(0, game.getSelectedDices().get(2));
-        selectedDice3.imageProperty().set(null);
-        chosenDiceImageView.add(selectedDice3);
-        userDice3img.setImage(game.getRemovedDices().get(0).getDiceImage());
+    private void setChosenUserDiceImgView() {
+        chosenUserDiceImgView.add(chosenUserDice1);
+        chosenUserDiceImgView.add(chosenUserDice2);
+        chosenUserDiceImgView.add(chosenUserDice3);
+        chosenUserDiceImgView.add(chosenUserDice4);
+        chosenUserDiceImgView.add(chosenUserDice5);
     }
 
-    @FXML
-    private void removeDice4() {
-        game.getRemovedDices().add(0, game.getPlayerUserDicesList().getDice(3));
-        selectedDice4.imageProperty().set(null);
-        chosenDiceImageView.add(selectedDice4);
-        userDice4img.setImage(game.getRemovedDices().get(0).getDiceImage());
-
-    }
-
-    @FXML
-    private void removeDice5() {
-        game.getRemovedDices().add(0, game.getPlayerUserDicesList().getDice(4));
-        selectedDice5.imageProperty().set(null);
-        chosenDiceImageView.add(selectedDice5);
-        userDice5img.setImage(game.getRemovedDices().get(0).getDiceImage());
+    private void setChosenCpuDiceImgView() {
+        chosenCpuDiceImgView.add(chosenCpuDice1);
+        chosenCpuDiceImgView.add(chosenCpuDice2);
+        chosenCpuDiceImgView.add(chosenCpuDice3);
+        chosenCpuDiceImgView.add(chosenCpuDice4);
+        chosenCpuDiceImgView.add(chosenCpuDice5);
     }
 }

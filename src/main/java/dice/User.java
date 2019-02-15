@@ -1,7 +1,7 @@
 package dice;
 
 public class User {
-    private ListOfDice userDicesList;
+    private ListOfDice userDicesList = null;
     private int score = 0;
 
     public User() {
@@ -15,10 +15,6 @@ public class User {
     public void setUserDicesList(ListOfDice list) {
         this.userDicesList = list;
     }
-
-//    public int getDiceValue() {
-//        return userDicesList.getDiceValue();
-//    }
 
     public int getScore() {
         return score;

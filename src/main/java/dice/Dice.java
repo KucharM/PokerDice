@@ -19,6 +19,10 @@ public class Dice {
         return this.diceValue;
     }
 
+    public void setDiceValue(int diceValue) {
+        this.diceValue = diceValue;
+    }
+
     public Image getDiceImage() {
         return this.diceImage;
     }

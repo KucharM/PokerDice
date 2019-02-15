@@ -3,26 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="74b0405a-12cd-4c5c-b007-70eb9da0da93" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/dice/CompUser.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/dice/Dice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dice/Dice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/dice/GameLogic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dice/GameLogic.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/dice/ListOfDice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dice/ListOfDice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/dice/MapOfDiceImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dice/MapOfDiceImage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/dice/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/dice/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/gui/controllers/GameWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/gui/controllers/GameWindowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/gui/controllers/MainWindowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/gui/controllers/MainWindowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/run/PokerDiceGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/run/PokerDiceGame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/resources/fxml/GameWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/fxml/GameWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/resources/fxml/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/fxml/MainWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dice/CompUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/fxml/MainMenuWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/fxml/MainMenuWindow.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dice/Dice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dice/Dice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dice/GameLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dice/GameLogic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dice/ListOfDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dice/ListOfDice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dice/MapOfDiceImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dice/MapOfDiceImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dice/ScoreComparator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dice/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dice/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gui/controllers/GameWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/controllers/GameWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gui/controllers/MainWindowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gui/controllers/MainWindowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/run/PokerDiceGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/run/PokerDiceGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/GameWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/GameWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/fxml/MainMenuWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fxml/MainMenuWindow.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -38,29 +33,32 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="poker-dice" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dice/GameLogic.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gui/controllers/GameWindowController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="595">
-              <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+            <state relative-caret-position="411">
+              <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="59" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/dice/ListOfDice.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#718#719#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,8 +67,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dice/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
+            <state relative-caret-position="204">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding>
+                <element signature="e#126#127#0" expanded="true" />
+                <element signature="e#179#180#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dice/GameLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,7 +93,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/run/PokerDiceGame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+              <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -88,10 +102,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gui/controllers/GameWindowController.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/dice/Dice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="74" selection-end-column="33" />
+            <state relative-caret-position="221">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,6 +120,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="CSS File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -130,28 +145,43 @@
         <option value="$PROJECT_DIR$/src/main/java/dice/MapOfDicesImg.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/MainMenuWindow.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/gui/controllers/MainMenuWindowController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dice/Game.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dice/ScoreComparator.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/MainWindow.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/dice/MapOfDiceImage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dice/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/dice/Dice.java" />
         <option value="$PROJECT_DIR$/src/main/resources/css/GameWindow.css" />
         <option value="$PROJECT_DIR$/src/main/java/dialog/Dialogs.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/FxmlUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/controllers/MainWindowController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/GameWindow.fxml" />
-        <option value="$PROJECT_DIR$/src/main/java/dice/ListOfDice.java" />
         <option value="$PROJECT_DIR$/src/main/java/run/PokerDiceGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dice/Game.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/HandComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/FiveOfAKind.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/LowStraight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/Figure.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/OnePair.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/ThreeOfAKind.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/TwoPairs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/SmallStraight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/BigStraight.java" />
+        <option value="$PROJECT_DIR$/src/main/java/comparators/FullHouse.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dice/Dice.java" />
+        <option value="$PROJECT_DIR$/out/production/resources/fxml/GameWindow.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/dice/GameLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dice/HandRecognizer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dice/CpuLogic.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/GameWindow.fxml" />
+        <option value="$PROJECT_DIR$/src/main/java/dice/ScoreComparator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dice/ListOfDice.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cpu/logic/DiceValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dice/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/gui/controllers/GameWindowController.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="735" />
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1346" />
+    <option name="height" value="688" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -184,6 +214,22 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poker-dice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poker-dice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="comparators" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="poker-dice" type="b2602c69:ProjectViewProjectNode" />
+              <item name="poker-dice" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="dialog" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="poker-dice" type="b2602c69:ProjectViewProjectNode" />
@@ -242,7 +288,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548752185474" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1550262706147" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -266,12 +312,12 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.PokerDiceGame">
-    <configuration name="Dice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dice.Dice" />
+    <configuration name="FiveOfAKind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="comparators.FiveOfAKind" />
       <module name="poker-dice.poker-dice.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dice.*" />
+          <option name="PATTERN" value="comparators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -292,8 +338,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapOfDicesImg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dice.MapOfDicesImg" />
+    <configuration name="HandRecognizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dice.HandRecognizer" />
       <module name="poker-dice.poker-dice.main" />
       <extension name="coverage">
         <pattern>
@@ -325,7 +371,7 @@
       <module name="poker-dice.poker-dice.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dice.*" />
+          <option name="PATTERN" value="comparators.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -336,10 +382,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.PokerDiceGame" />
-        <item itemvalue="Application.ScoreComparator" />
+        <item itemvalue="Application.HandRecognizer" />
         <item itemvalue="Application.GameWindowController" />
-        <item itemvalue="Application.Dice" />
-        <item itemvalue="Application.MapOfDicesImg" />
+        <item itemvalue="Application.FiveOfAKind" />
+        <item itemvalue="Application.ScoreComparator" />
       </list>
     </recent_temporary>
   </component>
@@ -371,18 +417,33 @@
       <workItem from="1548424074090" duration="2094000" />
       <workItem from="1548524117345" duration="3688000" />
       <workItem from="1548673407155" duration="15090000" />
-      <workItem from="1548751511498" duration="652000" />
+      <workItem from="1548751511498" duration="4044000" />
+      <workItem from="1548843194448" duration="959000" />
+      <workItem from="1549008976986" duration="13510000" />
+      <workItem from="1549115542404" duration="2656000" />
+      <workItem from="1549364641567" duration="2167000" />
+      <workItem from="1549378794046" duration="5521000" />
+      <workItem from="1549442039063" duration="2370000" />
+      <workItem from="1549535664270" duration="19011000" />
+      <workItem from="1549621912127" duration="23912000" />
+      <workItem from="1549705117883" duration="4147000" />
+      <workItem from="1549882450783" duration="37000" />
+      <workItem from="1549973132078" duration="9813000" />
+      <workItem from="1550065141974" duration="585000" />
+      <workItem from="1550166649237" duration="3655000" />
+      <workItem from="1550247608260" duration="135000" />
+      <workItem from="1550259412598" duration="3234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154433000" />
+    <option name="totallyTimeSpent" value="249537000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24886535" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26096824" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -404,18 +465,18 @@
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" />
-      <window_info anchor="right" id="Palette" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Gradle" order="6" />
+      <window_info anchor="right" id="Gradle" order="1" weight="0.32980332" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Palette" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24508321" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25642964" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -498,7 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dice/Game.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/StringBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1088">
@@ -510,60 +570,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-969">
-          <caret line="116" column="100" lean-forward="true" selection-start-line="116" selection-start-column="100" selection-end-line="116" selection-end-column="100" />
-          <folding>
-            <element signature="e#3405#3416#0" expanded="true" />
-            <element signature="e#79010#79011#0" expanded="true" />
-            <element signature="e#79046#79047#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainMenuWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/css/GameWindow.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" lean-forward="true" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dialog/Dialogs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/controllers/MainWindowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1669#1670#0" expanded="true" />
-            <element signature="e#1709#1710#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -574,35 +592,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gui/controllers/MainMenuWindowController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dice/CompUser.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dice/Game.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/MainWindow.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="17" column="17" lean-forward="true" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dice/CompUser.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/dice/Dice.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dialog/Dialogs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="30" column="22" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/GameWindow.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/out/production/resources/fxml/GameWindow.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="63" lean-forward="true" selection-start-line="63" selection-end-line="63" />
+        <state relative-caret-position="451">
+          <caret line="47" column="44" selection-start-line="47" selection-start-column="44" selection-end-line="47" selection-end-column="44" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28050">
+          <caret line="1770" selection-start-line="1770" selection-end-line="1770" />
+          <folding>
+            <element signature="e#79010#79011#0" expanded="true" />
+            <element signature="e#79046#79047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11764">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/GameWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="41" column="104" lean-forward="true" selection-start-line="41" selection-start-column="104" selection-end-line="41" selection-end-column="104" />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/controllers/MainMenuWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#205#206#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gui/controllers/MainWindowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="41" column="28" lean-forward="true" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1570#1571#0" expanded="true" />
+            <element signature="e#1610#1611#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dice/ScoreComparator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/comparators/TwoPairs.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/comparators/BigStraight.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/comparators/OnePair.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/comparators/SmallStraight.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/comparators/ThreeOfAKind.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/dice/HandRecognizer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/comparators/LowStraight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/comparators/FullHouse.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/comparators/FiveOfAKind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/comparators/Figure.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dice/CpuLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dice/MapOfDiceImage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
+        <state relative-caret-position="189">
           <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -614,46 +733,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dice/ScoreComparator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/dice/ListOfDice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        <state relative-caret-position="221">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#185#186#0" expanded="true" />
+            <element signature="e#234#235#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dice/GameLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        <state relative-caret-position="136">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dice/ListOfDice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="33" column="49" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dice/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        <state relative-caret-position="204">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cpu/logic/DiceValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dice/Dice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gui/controllers/GameWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="73" column="32" lean-forward="true" selection-start-line="73" selection-start-column="32" selection-end-line="74" selection-end-column="33" />
+        <state relative-caret-position="411">
+          <caret line="56" column="35" lean-forward="true" selection-start-line="56" selection-start-column="35" selection-end-line="59" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -663,7 +796,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/run/PokerDiceGame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
