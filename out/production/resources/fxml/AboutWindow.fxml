@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="760.0" stylesheets="@../css/AboutWindow.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.controllers.AboutWindowController">
+    <children>
+        <Label layoutX="33.0" layoutY="58.0" prefHeight="27.0" prefWidth="98.0" text="Game Rules:" />
+        <TextArea layoutX="30.0" layoutY="111.0" prefHeight="120.0" prefWidth="700.0" text="- the player has a set of five dice,&#10;- the goal of the game is to obtain the best possible arrangement of five dice in two draws,&#10;- after the first draw, the player can keep selected bones, and leave the rest to the second draw,&#10;- after the second draw, the player must complete the set of dice by selecting the remaining drawn dice,&#10;- the player with the better set of dice wins." />
+        <Label layoutX="33.0" layoutY="282.0" text="Possible sets of dice and its rank from the highest to the lowest:" />
+        <TextArea layoutX="29.0" layoutY="340.0" prefHeight="200.0" prefWidth="700.0" stylesheets="@../css/AboutWindow.css" text="- Five of a kind - five dice with the same value &#10;- Four of a kind - four dice with the same value&#10;- Full House - three dice with same value plus two other dice with same value&#10;- Straight - five dice with subsequent values example: from 1 to 5 or from 2 to 6&#10;- Three of a kind - three dice with the same value&#10;- Two pair - two dice with the same value plus other two with same value&#10;- One pair - two dice with the same value&#10;&#10;In case of the same type of dice set, the player with the highest sum of all dice wins." />
+        <Button layoutX="629.0" layoutY="40.0" mnemonicParsing="false" onAction="#backToMenu" text="Back" />
+    </children>
+</Pane>

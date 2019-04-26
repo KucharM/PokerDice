@@ -1,0 +1,25 @@
+.label {
+    -fx-font-family: Calibri;
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+
+.text-area {
+    -fx-background-color: green;
+    -fx-font-family: Calibri;
+    -fx-font-size: 14;
+    -fx-text-alignment: left;
+}
+
+Pane {
+    -fx-background-color: green;
+}
+
+.button {
+    -fx-background-color: lightblue;
+    -fx-pref-width: 100;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}

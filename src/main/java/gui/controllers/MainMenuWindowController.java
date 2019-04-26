@@ -11,6 +11,7 @@ import java.util.Optional;
 
 public class MainMenuWindowController {
     private static final String GAME_WINDOW = "/fxml/GameWindow.fxml";
+    private static final String ABOUT_WINDOW = "/fxml/AboutWindow.fxml";
 
     private MainWindowController mainWindowController;
 
@@ -29,7 +30,17 @@ public class MainMenuWindowController {
     }
 
     public void aboutGame() {
-        Dialogs.dialogAboutApp();
+        FXMLLoader loader = new FXMLLoader(this.getClass().getResource(ABOUT_WINDOW));
+        Pane pane = null;
+        try {
+            pane = loader.load();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        AboutWindowController aboutWindowController = loader.getController();
+        aboutWindowController.setMainWindowController(mainWindowController);
+        mainWindowController.setWindow(pane);
     }
 
     public void exit() {
