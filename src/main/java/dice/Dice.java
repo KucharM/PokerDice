@@ -1,7 +1,6 @@
 package dice;
 
 import javafx.scene.image.Image;
-
 import java.util.Random;
 
 public class Dice {
@@ -10,25 +9,23 @@ public class Dice {
 
     public Dice() {
         Random random = new Random();
-        this.diceValue = random.nextInt(6) + 1;
-        this.diceImage = new MapOfDiceImage().getMapOfDiceImage().get(this.diceValue);
+        int value = random.nextInt(6) + 1;
+        diceValue = value;
+        diceImage = new MapOfDiceImage().getMapOfDiceImage().get(diceValue);
     }
 
     //GETTERS
     public int getDiceValue() {
-        return this.diceValue;
-    }
-
-    public void setDiceValue(int diceValue) {
-        this.diceValue = diceValue;
+        return diceValue;
     }
 
     public Image getDiceImage() {
-        return this.diceImage;
+        return diceImage;
     }
 
     //to String method
     public String toString() {
-        return "number " + this.diceValue;
+        return "number " + diceValue;
     }
 }
+

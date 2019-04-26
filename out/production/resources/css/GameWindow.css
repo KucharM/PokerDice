@@ -1,4 +1,13 @@
-.ImageView:selected {
-    -fx-border-color: red;
 
+.button {
+    -fx-background-color: lightblue;
+}
+.label {
+    -fx-font-size: 16;
+}
+Pane {
+    -fx-background-color: green;
+    -fx-font-family: Calibri;
+    -fx-font-size: 12;
+    -fx-font-weight: bold;
 }

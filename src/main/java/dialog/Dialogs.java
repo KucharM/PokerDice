@@ -26,8 +26,29 @@ public class Dialogs {
     public static Optional<ButtonType> dialogQuitGame() {
         Alert quitGame = new Alert(Alert.AlertType.CONFIRMATION);
         quitGame.setTitle("Confirm Quit");
-        quitGame.setHeaderText("Are you sure you want to quit this game");
+        quitGame.setHeaderText("Are you sure you want to quit this game?");
         Optional<ButtonType> result = quitGame.showAndWait();
         return result;
+    }
+
+    public static void dialogUserWin() {
+        Alert userWins = new Alert(Alert.AlertType.INFORMATION);
+        userWins.setTitle("");
+        userWins.setHeaderText("YOU WIN!");
+        userWins.show();
+    }
+
+    public static void dialogCpuWin() {
+        Alert userWins = new Alert(Alert.AlertType.INFORMATION);
+        userWins.setTitle("");
+        userWins.setHeaderText("Cpu WIN!");
+        userWins.show();
+    }
+
+    public static void dialogDraw() {
+        Alert draw = new Alert(Alert.AlertType.INFORMATION);
+        draw.setTitle("");
+        draw.setHeaderText("DRAW");
+        draw.show();
     }
 }

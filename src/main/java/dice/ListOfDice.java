@@ -27,6 +27,15 @@ public class ListOfDice {
         return diceList;
     }
 
+    //method returns list of dices values
+    public List<Integer> getListOfValues(List<Dice> list) {
+        List<Integer> listOfValues = new ArrayList<>();
+        for (Dice dice: list) {
+            listOfValues.add(dice.getDiceValue());
+        }
+        return listOfValues;
+    }
+
     public void setDice(int index, Dice dice) {
         Dice dice1 = diceList.get(index);
         dice1 = dice;
@@ -46,21 +55,6 @@ public class ListOfDice {
 
     public Image getDiceImage(int index) {
         return diceList.get(index).getDiceImage();
-    }
-
-    //method returns single value of dice from list
-    public int[] getDiceListValue() {
-        int[] values = new int[5];
-
-        for (int i = 0; i < 5; i++)
-            values[i] = diceList.get(i).getDiceValue();
-
-        return values;
-    }
-
-    //method returns string value of dice from list
-    public String getDiceListValueAsString(int index) {
-        return Integer.toString(diceList.get(index).getDiceValue());
     }
 
     @Override
